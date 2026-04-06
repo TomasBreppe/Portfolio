@@ -1,0 +1,71 @@
+.block{ padding: 18px; border-radius: 22px; }
+.wrap{ display:grid; grid-template-columns: 90px 1fr; gap: 8px; align-items:start; margin-top: 10px; }
+
+.avatar{
+  width: 76px; height: 76px;
+  border-radius: 22px;
+  display:flex; align-items:center; justify-content:center;
+  font-weight: 1000;
+  background: rgba(34,211,238,.16);
+  border: 1px solid rgba(34,211,238,.22);
+}
+
+.info{
+  padding: 14px;
+  border-radius: 18px;
+  background: rgba(255,255,255,.04);
+  box-shadow:none;
+}
+
+.row{
+  display:flex;
+  align-items:center;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 8px 0;
+}
+
+/* ✅ iconos */
+.ico{
+  width: 22px;
+  min-width: 22px;
+  font-size: 22px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* GitHub en blanco para que no se pierda en oscuro */
+.devicon-github-original{
+  color: #fff !important;
+}
+
+/* meta con iconitos */
+.metaLine{
+  margin-top: 12px;
+  display:flex;
+  align-items:center;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: var(--muted);
+  font-weight: 900;
+}
+
+.metaItem{
+  display:inline-flex;
+  align-items:center;
+  gap: 6px;
+}
+
+.mico{
+  font-size: 18px;
+  color: rgba(34,211,238,.85);
+}
+
+.sep{ opacity: .55; }
+
+.actions{ margin-top: 12px; }
+
+@media (max-width: 900px){
+  .wrap{ grid-template-columns: 1fr; }
+}

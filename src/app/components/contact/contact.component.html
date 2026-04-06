@@ -1,0 +1,44 @@
+<section id="contact" class="section anchor">
+  <div class="container">
+    <div class="card block">
+      <h2 class="h2">{{ lang.t('contact_title') }}</h2>
+
+      <div class="wrap">
+        <div class="avatar">TB</div>
+
+        <div class="info card">
+          <!-- Email -->
+          <div class="row">
+            <i class="ico devicon-google-plain colored"></i>
+            <a [href]="'mailto:'+email">{{ email }}</a>
+            <button class="btn" (click)="copyEmail()">{{ lang.t('btn_copy') }}</button>
+          </div>
+
+          <!-- LinkedIn -->
+          <div class="row">
+            <i class="ico devicon-linkedin-plain colored"></i>
+            <a
+              href="https://www.linkedin.com/in/tom%C3%A1s-breppe-/?trk=opento_sprofile_details"
+              target="_blank"
+              rel="noopener"
+            >
+              LinkedIn
+            </a>
+          </div>
+
+          <!-- GitHub -->
+          <div class="row">
+            <i class="ico devicon-github-original"></i>
+            <a href="https://github.com/TomasBreppe" target="_blank" rel="noopener">GitHub</a>
+          </div>
+
+          <div class="actions">
+            <a class="btn primary" href="/assets/cv/CV_Tomas_Breppe_Java_Developer.pdf" target="_blank" rel="noopener">
+              {{ lang.t('btn_view_cv') }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,58 @@
+<section id="about" class="section anchor">
+  <div class="container">
+    <div class="panel card">
+
+      <h2 class="h2">{{ lang.t('about_title') }}</h2>
+
+      <!-- Quote -->
+      <div class="quote card">
+        “ {{ lang.t('about_quote') }} ”
+      </div>
+
+      <!-- Intro + Strengths -->
+      <div class="grid">
+        <div class="box card">
+          <p class="p">
+            {{ lang.t('about_body_1') }}
+            <br /><br />
+            → {{ lang.t('about_body_2') }}
+          </p>
+        </div>
+
+        <div class="box card">
+          <div class="k">{{ lang.t('about_strengths_title') }}</div>
+          <div class="chips">
+            <span class="chip" *ngFor="let s of strengths()">
+              {{ s }}
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline -->
+      <div class="path card">
+        <div class="k">{{ lang.t('about_path_title') }}</div>
+
+        <div class="timeline">
+          <div class="timeline-item" *ngFor="let t of timeline()">
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content card">
+              <div class="year">{{ t.year }}</div>
+              <div class="text">{{ t.text }}</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mission -->
+        <div class="mission card">
+          <div class="k">{{ lang.t('about_mission_title') }}</div>
+          <p class="p">
+            {{ lang.t('about_mission_text') }}
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

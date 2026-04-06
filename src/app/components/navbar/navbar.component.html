@@ -1,0 +1,22 @@
+<header class="nav">
+  <div class="container nav__inner">
+    <a class="brand" href="#top">Inicio</a>
+
+    <nav class="links">
+      <!-- Proyecto destacado -->
+      <a href="#featured">{{ lang.t('nav_featured') }}</a>
+
+      <!-- Otros proyectos -->
+      <a href="#projects">{{ lang.t('nav_projects') }}</a>
+
+      <a href="#about">{{ lang.t('nav_about') }}</a>
+      <a href="#contact">{{ lang.t('nav_contact') }}</a>
+
+      
+
+      <button class="btn btn-lang" type="button" (click)="toggleLang()">
+        EN / ES
+      </button>
+    </nav>
+  </div>
+</header>

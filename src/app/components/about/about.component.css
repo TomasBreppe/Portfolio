@@ -1,0 +1,168 @@
+/* =========================
+   ABOUT COMPLETO UNIFICADO
+   Estilo consistente con línea lateral
+========================= */
+
+.panel{
+  padding: 28px;
+}
+
+/* Títulos */
+.h2{
+  margin-bottom: 18px;
+}
+
+/* ===== BLOQUES GENERALES ===== */
+.quote,
+.box,
+.path,
+.mission,
+.timeline-content{
+  position: relative;
+  background: rgba(255,255,255,.045);
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+/* Línea lateral con tu acento */
+.quote::before,
+.box::before,
+.path::before,
+.mission::before{
+  content:"";
+  position:absolute;
+  left: 0;
+  top: 14px;
+  bottom: 14px;
+  width: 4px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, var(--accent), var(--accent2));
+  opacity: .95;
+}
+
+/* ===== QUOTE ===== */
+.quote{
+  margin: 18px 0 26px;
+  padding: 18px 22px;
+  font-style: italic;
+  text-align: center;
+  color: rgba(234,240,255,.92);
+}
+
+/* ===== GRID SUPERIOR ===== */
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.box{
+  padding: 22px;
+}
+
+.box .p{
+  margin: 0;
+  color: rgba(169,180,208,.92);
+  line-height: 1.7;
+}
+
+/* ===== FORTALEZAS ===== */
+.k{
+  color: rgba(234,240,255,.92);
+  font-weight: 1000;
+  letter-spacing: .6px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.chips{
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chip{
+  font-size: 12px;
+  font-weight: 900;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.05);
+  color: rgba(234,240,255,.85);
+  transition: transform .15s ease, border-color .15s ease, background .15s ease;
+}
+
+.chip:hover{
+  transform: translateY(-1px);
+  border-color: rgba(34,211,238,.25);
+  background: rgba(34,211,238,.06);
+}
+
+/* ===== MI CAMINO ===== */
+.path{
+  margin-top: 28px;
+  padding: 24px;
+}
+
+/* Timeline vertical */
+.timeline{
+  position: relative;
+  margin-top: 20px;
+  padding-left: 28px;
+  border-left: 2px solid rgba(255,255,255,0.10);
+}
+
+.timeline-item{
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.timeline-dot{
+  position: absolute;
+  left: -9px;
+  top: 10px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  box-shadow: 0 0 0 4px rgba(34,211,238,.12);
+}
+
+.timeline-content{
+  padding: 18px 18px;
+  margin-left: 6px;
+}
+
+.year{
+  font-weight: 1000;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: rgba(234,240,255,.92);
+}
+
+.text{
+  opacity: 0.9;
+  line-height: 1.5;
+  color: rgba(169,180,208,.92);
+}
+
+/* ===== MISIÓN ===== */
+.mission{
+  margin-top: 22px;
+  padding: 22px;
+}
+
+.mission .p{
+  margin-top: 12px;
+  color: rgba(169,180,208,.92);
+  line-height: 1.7;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px){
+  .grid{
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,14 @@
+<section class="section anchor">
+  <div class="container">
+    <div class="card panel">
+      <h2 class="h2">{{ lang.t('tech_title') }}</h2>
+
+      <div class="grid">
+        <div class="tile" *ngFor="let t of techs" [title]="t.name">
+          <i class="icon" [class]="t.icon"></i>
+          <span class="name">{{ t.name }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

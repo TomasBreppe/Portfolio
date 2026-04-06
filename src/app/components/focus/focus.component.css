@@ -1,0 +1,7 @@
+.focus{
+  padding: 18px;
+  border-radius: 22px;
+  background: rgba(255,255,255,.04);
+  box-shadow: none;
+}
+.focus b{ color: var(--text); }

@@ -1,0 +1,72 @@
+<section id="featured" class="section anchor">
+  <div class="container">
+    <div class="card block panelx accent-left">
+      <div class="head">
+        <div class="k">{{ lang.t('projects_featured_k') }}</div>
+      </div>
+
+      <!-- FEATURED -->
+      <div class="featured card hoverLift">
+        <div class="img">
+          <img class="thumb" [src]="featured().imgUrl" [alt]="featured().title" loading="lazy" />
+        </div>
+
+        <div class="content">
+          <h3 class="h3">{{ featured().title }}</h3>
+          <span class="pill">{{ featured().status }}</span>
+
+          <p class="p" style="margin-top: 12px">{{ featured().desc }}</p>
+
+          <div class="chips">
+            <span class="chip" *ngFor="let s of featured().stack">{{ s }}</span>
+          </div>
+
+          <div class="actions">
+            <a class="btn primary" [href]="featured().repoUrl" target="_blank">
+              {{ lang.t('btn_view_github') }}
+            </a>
+
+            <a
+              class="btn secondary"
+              *ngIf="featured().demoUrl"
+              [href]="featured().demoUrl"
+              target="_blank"
+            >
+              {{ lang.t('btn_view_demo') }}
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- OTROS PROYECTOS -->
+      <div id="projects" class="sub anchor">
+        <div class="k">{{ lang.t('projects_others_k') }}</div>
+
+        <div class="othersList">
+          <article class="featured card hoverLift" *ngFor="let p of others()">
+            <div class="img img--logo">
+              <img class="thumb thumb--contain" [src]="p.imgUrl" [alt]="p.title" loading="lazy" />
+            </div>
+
+            <div class="content">
+              <h3 class="h3">{{ p.title }}</h3>
+              <span class="pill">{{ p.status }}</span>
+
+              <p class="p" style="margin-top: 12px">{{ p.desc }}</p>
+
+              <div class="chips">
+                <span class="chip" *ngFor="let s of p.stack">{{ s }}</span>
+              </div>
+
+              <div class="actions">
+                <a class="btn primary" [href]="p.repoUrl" target="_blank" rel="noopener">
+                  {{ lang.t('btn_view_github') }}
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

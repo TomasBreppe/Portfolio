@@ -1,0 +1,23 @@
+.footer{
+  margin-top: 60px;
+  padding: 26px 0 34px;
+}
+
+.footer .line{
+  height: 1px;
+  background: rgba(255,255,255,.10);
+  margin-bottom: 18px;
+}
+
+.footer .copy{
+  color: rgba(234,240,255,.72);
+  font-weight: 900;
+  letter-spacing: .2px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* opcional: un poquito de glow suave */
+.footer .copy{
+  text-shadow: 0 8px 26px rgba(34,211,238,.12);
+}
