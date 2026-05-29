@@ -4,7 +4,7 @@
       <h2 class="h2">{{ lang.t('tech_title') }}</h2>
 
       <div class="groups">
-        <div class="group" *ngFor="let group of techGroups">
+        <div class="group" *ngFor="let group of techGroups()">
           <h3 class="groupTitle">{{ group.title }}</h3>
 
           <div class="grid">

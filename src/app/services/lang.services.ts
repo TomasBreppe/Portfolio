@@ -159,6 +159,25 @@ export class LangService {
       es: 'Tecnologías y Stack Principal',
       en: 'Core Technologies & Stack',
     },
+    tech_backend: {
+      es: 'Backend',
+      en: 'Backend',
+    },
+
+    tech_frontend: {
+      es: 'Frontend',
+      en: 'Frontend',
+    },
+
+    tech_databases: {
+      es: 'Bases de Datos',
+      en: 'Databases',
+    },
+
+    tech_tools: {
+      es: 'Herramientas y Deploy',
+      en: 'Tools & Deployment',
+    },
 
     /* FOCUS */
     focus_title: {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, computed } from '@angular/core';
 import { NgFor } from '@angular/common';
 import { LangService } from '../../services/lang.services';
 
@@ -15,9 +15,9 @@ type TechGroup = { title: string; items: Tech[] };
 export class TechComponent {
   constructor(public lang: LangService) {}
 
-  techGroups: TechGroup[] = [
+  techGroups = computed<TechGroup[]>(() => [
     {
-      title: 'Backend',
+      title: this.lang.t('tech_backend'),
       items: [
         { icon: 'devicon-java-plain colored', name: 'Java' },
         { icon: 'devicon-spring-plain colored', name: 'Spring Boot' },
@@ -29,7 +29,7 @@ export class TechComponent {
       ],
     },
     {
-      title: 'Frontend',
+      title: this.lang.t('tech_frontend'),
       items: [
         { icon: 'devicon-angularjs-plain colored', name: 'Angular' },
         { icon: 'devicon-typescript-plain colored', name: 'TypeScript' },
@@ -40,7 +40,7 @@ export class TechComponent {
       ],
     },
     {
-      title: 'Bases de Datos',
+      title: this.lang.t('tech_databases'),
       items: [
         { icon: 'devicon-postgresql-plain colored', name: 'PostgreSQL' },
         { icon: 'devicon-microsoftsqlserver-plain colored', name: 'SQL Server' },
@@ -48,7 +48,7 @@ export class TechComponent {
       ],
     },
     {
-      title: 'Herramientas & Deploy',
+      title: this.lang.t('tech_tools'),
       items: [
         { icon: 'devicon-git-plain colored', name: 'Git' },
         { icon: 'devicon-github-original colored', name: 'GitHub' },
@@ -59,5 +59,5 @@ export class TechComponent {
         { icon: 'devicon-supabase-plain colored', name: 'Supabase' },
       ],
     },
-  ];
+  ]);
 }
