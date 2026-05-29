@@ -15,19 +15,21 @@ export class AboutComponent {
   strengths = computed(() =>
     this.lang.lang() === 'es'
       ? [
-          'Pensamiento lógico',
           'Resolución de problemas',
-          'Código limpio',
           'Arquitectura en capas',
-          'Proactividad y trabajo en equipo',
+          'Trabajo en equipo',
+          'Aprendizaje Continuo',
+          'Mantenibilidad',
+          'Desarrollo orientado a negocio',
         ]
       : [
-          'Logical thinking',
           'Problem solving',
-          'Clean code',
           'Layered architecture',
-          'Proactive teamwork',
-        ]
+          'Teamwork',
+          'Continuous Learning',
+          'Maintainability',
+          'Business-oriented development',
+        ],
   );
 
   timeline = computed(() =>
@@ -35,38 +37,46 @@ export class AboutComponent {
       ? [
           {
             year: '2022',
-            text: 'Inicio en programación. Fundamentos de lógica, algoritmos, Java y bases de datos.',
+            text: 'Fundamentos de programación, Java y bases de datos.',
           },
           {
             year: '2023',
-            text: 'Primeros proyectos completos. Desarrollo de APIs REST y práctica constante con Git y SQL.',
+            text: 'Desarrollo de APIs REST y arquitectura en capas.',
           },
           {
             year: '2024',
-            text: 'Consolidación en Java + Spring Boot. Arquitectura en capas, validaciones, manejo de errores y seguridad con JWT.',
+            text: 'Seguridad, JWT, validaciones y buenas prácticas.',
           },
           {
             year: '2025',
-            text: 'Proyecto final universitario: Lautaro Diesel E-Commerce. Integración con Mercado Pago (Checkout Pro + Webhooks), stock y reglas de negocio con enfoque profesional.',
+            text: 'Proyecto final universitario e integración de sistemas de pago.',
+          },
+          {
+            year: '2026',
+            text: 'Desarrollo de Club Banco, sistema de gestión deportiva con reglas de negocio reales, dashboards financieros y despliegue completo. Creación de portfolio profesional y búsqueda de primeras oportunidades laborales.',
           },
         ]
       : [
           {
             year: '2022',
-            text: 'Started programming. Fundamentals of logic, algorithms, Java and databases.',
+            text: 'Programming fundamentals, Java and databases.',
           },
           {
             year: '2023',
-            text: 'First complete projects. REST API development and consistent practice with Git and SQL.',
+            text: 'Development of REST APIs and layered architecture.',
           },
           {
             year: '2024',
-            text: 'Solid focus on Java + Spring Boot. Layered architecture, validations, error handling and JWT-based security.',
+            text: 'Security, JWT, validations and best practices.',
           },
           {
             year: '2025',
-            text: 'Final university project: Lautaro Diesel E-Commerce. Mercado Pago integration (Checkout Pro + Webhooks), stock management and business rules with a professional approach.',
+            text: 'Final university project and integration of payment systems.',
           },
-        ]
+          {
+            year: '2026',
+            text: 'Development of Club Banco, a sports management system with real business rules, financial dashboards and full deployment. Creation of a professional portfolio and pursuit of first professional opportunities.',
+          },
+        ],
   );
 }

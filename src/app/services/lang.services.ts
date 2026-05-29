@@ -36,8 +36,8 @@ export class LangService {
 
     /* HERO */
     hero_pill: {
-      es: 'Java · Spring Boot · Angular · TypeScript · SQL · Docker · Integraciones',
-      en: 'Java · Spring Boot · Angular · TypeScript · SQL · Docker · Integrations',
+      es: 'Full Stack Developer Jr. | Java · Spring Boot · Angular',
+      en: 'Full Stack Developer Jr. | Java · Spring Boot · Angular',
     },
 
     hero_subtitle_html: {
@@ -89,23 +89,23 @@ export class LangService {
     },
 
     about_quote: {
-      es: 'Me gusta construir soluciones completas: desde la API hasta la experiencia del usuario.',
-      en: 'I enjoy building complete solutions—from APIs to user experience.',
+      es: 'Construyo soluciones completas, desde la lógica de negocio hasta la experiencia del usuario.',
+      en: 'I build complete solutions, from business logic to user experience.',
     },
 
     about_body_1: {
-      es: 'Soy Técnico Universitario en Programación (UTN FR Córdoba). Empecé a estudiar programación en 2022 y desde entonces vengo construyendo proyectos para consolidar fundamentos, buenas prácticas y calidad de código.',
-      en: 'I am a University Programming Technician (UTN Córdoba). I started studying programming in 2022 and since then I have been building projects to strengthen fundamentals, best practices and code quality.',
+      es: 'Soy Técnico Universitario en Programación (UTN FRC Córdoba). con orientación al desarrollo backend utilizando Java, Spring Boot y SQL. Me especializo en la construcción de APIs REST, modelado de bases de datos relacionales y desarrollo de aplicaciones web full stack con Angular.',
+      en: 'I am a University Technician in Programming (UTN FRC Córdoba) specializing in backend development using Java, Spring Boot, and SQL. I specialize in building REST APIs, modeling relational databases, and developing full-stack web applications with Angular.',
     },
 
     about_body_2: {
-      es: 'Me adapto a distintas tecnologías según el desafío. Trabajo con Java y Spring Boot para APIs REST, SQL para modelar datos, y Angular/TypeScript en el frontend. Me importa la arquitectura, la mantenibilidad, las validaciones de negocio y un manejo de errores claro.',
-      en: 'I adapt to different technologies depending on the challenge. I use Java and Spring Boot for REST APIs, SQL for data modeling, and Angular/TypeScript on the frontend. I care about architecture, maintainability, business validations, and clear error handling.',
+      es: 'Actualmente desarrollo proyectos que integran lógica de negocio, autenticación, persistencia de datos y visualización de información, aplicando arquitectura en capas y buenas prácticas de desarrollo.',
+      en: 'I currently develop projects that integrate business logic, authentication, data persistence, and information visualization, applying layered architecture and best development practices.',
     },
 
     about_strengths_title: {
-      es: 'Fortalezas',
-      en: 'Strengths',
+      es: 'QUÉ APORTO',
+      en: 'WHAT I CONTRIBUTE',
     },
 
     about_path_title: {
@@ -116,26 +116,32 @@ export class LangService {
     /* MI CAMINO (2022+) */
     path_2022_y: { es: '2022', en: '2022' },
     path_2022_t: {
-      es: 'Inicio en programación. Fundamentos de lógica, Java y bases de datos.',
-      en: 'Started programming. Fundamentals of logic, Java and databases.',
+      es: 'Fundamentos de programación, Java y bases de datos.',
+      en: 'Programming fundamentals, Java and databases.',
     },
 
     path_2023_y: { es: '2023', en: '2023' },
     path_2023_t: {
-      es: 'Primeros proyectos completos. APIs REST con Spring Boot y arquitectura en capas.',
-      en: 'First complete projects. REST APIs with Spring Boot and layered architecture.',
+      es: 'Desarrollo de APIs REST y arquitectura en capas.',
+      en: 'Development of REST APIs and layered architecture.',
     },
 
     path_2024_y: { es: '2024', en: '2024' },
     path_2024_t: {
-      es: 'Profundización en seguridad y buenas prácticas: JWT + roles, validaciones y manejo consistente de errores.',
-      en: 'Deeper focus on security and best practices: JWT + roles, validations and consistent error handling.',
+      es: 'Seguridad, JWT, validaciones y buenas prácticas.',
+      en: 'Security, JWT, validations and best practices.',
     },
 
     path_2025_y: { es: '2025', en: '2025' },
     path_2025_t: {
-      es: 'Proyecto final universitario: Lautaro Diesel E-Commerce. Integración con Mercado Pago (Checkout Pro + Webhooks), stock y reglas de negocio.',
-      en: 'Final university project: Lautaro Diesel E-Commerce. Mercado Pago integration (Checkout Pro + Webhooks), stock and business rules.',
+      es: 'Proyecto final universitario e integración de sistemas de pago.',
+      en: 'Final university project and integration of payment systems.',
+    },
+
+    path_2026_y: { es: '2026', en: '2026' },
+    path_2026_t: {
+      es: 'Desarrollo de Club Banco, sistema de gestión deportiva con reglas de negocio reales, dashboards financieros y despliegue completo. Creación de portfolio profesional y búsqueda de primeras oportunidades laborales.',
+      en: 'Development of Club Banco, a sports management system with real business rules, financial dashboards, and full deployment. Creation of a professional portfolio and pursuit of first professional opportunities.',
     },
 
     about_mission_title: {
@@ -144,8 +150,8 @@ export class LangService {
     },
 
     about_mission_text: {
-      es: 'Construir software confiable y bien diseñado. Escribir código claro, tomar decisiones técnicas con criterio y mejorar continuamente a través de proyectos reales y feedback.',
-      en: 'To build reliable, well-designed software. Write clear code, make thoughtful technical decisions and continuously improve through real projects and feedback.',
+      es: 'Mi objetivo es desarrollar soluciones que aporten valor real a las personas y organizaciones. Me interesa construir aplicaciones mantenibles, resolver problemas concretos y seguir creciendo profesionalmente a través de proyectos, trabajo en equipo y aprendizaje continuo.',
+      en: 'My goal is to develop solutions that deliver real value to individuals and organizations. I am interested in building maintainable applications, solving concrete problems, and continuing to grow professionally through projects, teamwork, and continuous learning.',
     },
 
     /* TECH */
@@ -161,13 +167,13 @@ export class LangService {
     },
 
     focus_p1: {
-      es: 'Para mí desarrollar software no es solo “que funcione”: es que sea fácil de mantener, escale bien y se entienda. Me gusta ordenar el código, separar responsabilidades y dejar una base sólida para seguir iterando.',
-      en: 'For me, software development is not just “making it work”: it should be maintainable, scalable and easy to understand. I like organizing code, separating responsibilities and building a solid base to keep iterating.',
+      es: 'Me enfoco en desarrollar software mantenible, escalable y fácil de comprender. Me gusta organizar el código, separar responsabilidades y construir una base sólida que facilite la evolución del proyecto.',
+      en: 'I focus on developing maintainable, scalable, and easy-to-understand software. I enjoy organizing code, separating responsibilities, and building a solid foundation that facilitates project evolution.',
     },
 
     focus_p2_html: {
-      es: 'Construyo <b>APIs REST</b> y aplicaciones <b>full stack</b> con validaciones reales del negocio, seguridad cuando aplica (por ejemplo <b>JWT + roles</b>), manejo de errores consistente y documentación clara. Priorizo calidad, comunicación y aprendizaje continuo.',
-      en: 'I build <b>REST APIs</b> and <b>full stack</b> applications with real business validations, security when needed (e.g., <b>JWT + roles</b>), consistent error handling and clear documentation. I prioritize quality, communication and continuous learning.',
+      es: 'Desarrollo APIs REST y aplicaciones full stack aplicando validaciones de negocio, seguridad, manejo consistente de errores y documentación clara. Priorizo la calidad, la comunicación y el aprendizaje continuo.',
+      en: 'I develop REST APIs and full-stack applications, applying business validations, security, consistent error handling, and clear documentation. I prioritize quality, communication, and continuous learning.',
     },
 
     /* PROJECTS */

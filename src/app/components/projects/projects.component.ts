@@ -7,6 +7,7 @@ type Project = {
   title: string;
   status: string;
   desc: string;
+  metrics?: string[];
   stack: string[];
   repoUrl: string;
   demoUrl?: string;
@@ -27,8 +28,14 @@ export class ProjectsComponent {
       ? {
           imgUrl: 'assets/cv/img/club-banco.png',
           title: 'Club Banco - Sistema de Gestión Deportiva',
-          status: 'Destacado',
-          desc: 'Aplicación web full stack desarrollada para digitalizar la administración de un club deportivo. Permite gestionar socios, disciplinas, cuotas, inscripciones, ingresos, gastos y dashboards financieros con autenticación JWT y despliegue en la nube.',
+          status: 'Proyecto Full Stack Principal',
+          desc: 'Sistema web desarrollado para la administración integral de un club deportivo. Permite gestionar socios, disciplinas, categorías, aranceles, pagos, deudas, ingresos, gastos y balances financieros desde un panel privado para administradores. Incluye autenticación JWT, dashboards interactivos, exportación de reportes Excel y despliegue completo de frontend, backend y base de datos.',
+          metrics: [
+            '+270 socios administrados',
+            '+7 disciplinas',
+            'Dashboard financiero completo',
+            'Exportación de reportes Excel',
+          ],
           stack: [
             'Java',
             'Spring Boot',
@@ -47,8 +54,14 @@ export class ProjectsComponent {
       : {
           imgUrl: 'assets/cv/img/club-banco.png',
           title: 'Club Banco - Sports Club Management System',
-          status: 'Featured',
-          desc: 'Full stack web application developed to digitize the administration of a sports club. It allows managing members, disciplines, monthly fees, registrations, income, expenses, and financial dashboards with JWT authentication and cloud deployment.',
+          status: 'Main Full Stack Project',
+          desc: 'Web system developed for the comprehensive administration of a sports club. It allows managing members, disciplines, categories, fees, payments, debts, income, expenses, and financial balances from a private admin panel. It includes JWT authentication, interactive dashboards, Excel report exports, and full deployment of frontend, backend, and database.',
+          metrics: [
+            '+270 managed members',
+            '+7 disciplines',
+            'Complete financial dashboard',
+            'Excel report exports',
+          ],
           stack: [
             'Java',
             'Spring Boot',

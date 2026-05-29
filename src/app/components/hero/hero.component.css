@@ -36,7 +36,7 @@
 .cta {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 16px;
   margin-top: 10px;
 }
 .quick {

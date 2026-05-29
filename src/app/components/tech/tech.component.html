@@ -1,12 +1,18 @@
-<section class="section anchor">
+<section id="tech" class="section anchor">
   <div class="container">
     <div class="card panel">
       <h2 class="h2">{{ lang.t('tech_title') }}</h2>
 
-      <div class="grid">
-        <div class="tile" *ngFor="let t of techs" [title]="t.name">
-          <i class="icon" [class]="t.icon"></i>
-          <span class="name">{{ t.name }}</span>
+      <div class="groups">
+        <div class="group" *ngFor="let group of techGroups">
+          <h3 class="groupTitle">{{ group.title }}</h3>
+
+          <div class="grid">
+            <div class="tile" *ngFor="let t of group.items" [title]="t.name">
+              <i class="icon" [class]="t.icon"></i>
+              <span class="name">{{ t.name }}</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>

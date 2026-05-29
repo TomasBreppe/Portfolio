@@ -64,7 +64,12 @@
 
 .sep{ opacity: .55; }
 
-.actions{ margin-top: 12px; }
+.actions{ 
+  margin-top: 12px; 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
 
 @media (max-width: 900px){
   .wrap{ grid-template-columns: 1fr; }
