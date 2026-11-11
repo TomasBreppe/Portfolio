@@ -217,3 +217,8 @@
   border: 1px solid rgba(34, 211, 238, 0.22);
 }
 }
+.private-note{
+  margin: 12px 0 0;
+  font-size: 14px;
+  color: var(--muted);
+}

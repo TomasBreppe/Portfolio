@@ -29,8 +29,8 @@
             <span class="chip" *ngFor="let s of featured().stack">{{ s }}</span>
           </div>
 
-          <div class="actions">
-            <a class="btn primary" [href]="featured().repoUrl" target="_blank" rel="noopener">
+          <div class="actions" *ngIf="featured().repoUrl || featured().demoUrl">
+            <a class="btn primary" *ngIf="featured().repoUrl" [href]="featured().repoUrl" target="_blank" rel="noopener">
               {{ lang.t('btn_view_github') }}
             </a>
 
@@ -44,6 +44,10 @@
               {{ lang.t('btn_view_demo') }}
             </a>
           </div>
+
+          <p class="p private-note" *ngIf="featured().privateDemo">
+            {{ lang.t('projects_private_note') }}
+          </p>
         </div>
       </div>
 

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LangService } from '../../services/lang.services';
 
 @Component({
   selector: 'app-footer',
@@ -7,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.css'],
 })
 export class FooterComponent {
+  constructor(public lang: LangService) {}
+
   year = new Date().getFullYear();
 }

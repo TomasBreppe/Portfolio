@@ -18,16 +18,26 @@ export class TimelineComponent {
     this.lang.lang() === 'es'
       ? [
           {
-            title: 'Proyecto Tesis — Lautaro Diesel',
-            subtitle: 'E-commerce · API REST · JWT · Mercado Pago',
-            tags: ['Backend', 'Spring Boot', 'Angular'],
+            title: 'Desarrollador Full Stack (Freelance) — Club Banco de Córdoba',
+            subtitle: '2026 – actualidad · Sistema en producción · +500 socios',
+            tags: ['Java', 'Spring Boot', 'Spring Security', 'JWT', 'PostgreSQL', 'Angular'],
+          },
+          {
+            title: 'Desarrollador Full Stack — E-commerce Lautaro Diesel',
+            subtitle: '2025 – 2026 · Proyecto Final UTN',
+            tags: ['Java', 'Spring Boot', 'Spring Security', 'Angular', 'SQL Server', 'Mercado Pago'],
           },
         ]
       : [
           {
-            title: 'Thesis Project — Lautaro Diesel',
-            subtitle: 'E-commerce · REST API · JWT · Mercado Pago',
-            tags: ['Backend', 'Spring Boot', 'Angular'],
+            title: 'Full Stack Developer (Freelance) — Club Banco de Córdoba',
+            subtitle: '2026 – present · Production system · 500+ members',
+            tags: ['Java', 'Spring Boot', 'Spring Security', 'JWT', 'PostgreSQL', 'Angular'],
+          },
+          {
+            title: 'Full Stack Developer — Lautaro Diesel E-commerce',
+            subtitle: '2025 – 2026 · UTN Final Project',
+            tags: ['Java', 'Spring Boot', 'Spring Security', 'Angular', 'SQL Server', 'Mercado Pago'],
           },
         ]
   );
@@ -36,16 +46,16 @@ export class TimelineComponent {
     this.lang.lang() === 'es'
       ? [
           {
-            title: 'UTN — Tecnicatura Universitaria en Programación',
-            subtitle: 'Finalizada',
-            tags: ['Programación', 'Arquitectura', 'Bases de datos'],
+            title: 'Tecnicatura Universitaria en Programación — UTN Facultad Regional Córdoba',
+            subtitle: '2022 – 2026 · Finalizada',
+            tags: ['Programación', 'Arquitectura de software', 'Bases de datos'],
           },
         ]
       : [
           {
-            title: 'UTN — University Technical Degree in Programming',
-            subtitle: 'Completed',
-            tags: ['Programming', 'Architecture', 'Databases'],
+            title: 'University Technical Degree in Programming — UTN Córdoba Regional Faculty',
+            subtitle: '2022 – 2026 · Completed',
+            tags: ['Programming', 'Software architecture', 'Databases'],
           },
         ]
   );

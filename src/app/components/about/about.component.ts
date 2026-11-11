@@ -1,11 +1,11 @@
 import { Component, computed } from '@angular/core';
-import { NgFor, NgIf } from '@angular/common';
+import { NgFor } from '@angular/common';
 import { LangService } from '../../services/lang.services';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [NgFor, NgIf],
+  imports: [NgFor],
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css'],
 })
@@ -15,20 +15,20 @@ export class AboutComponent {
   strengths = computed(() =>
     this.lang.lang() === 'es'
       ? [
-          'Resolución de problemas',
+          'APIs REST con Spring Boot',
+          'Seguridad con JWT y roles',
+          'Modelado de bases de datos relacionales',
           'Arquitectura en capas',
-          'Trabajo en equipo',
-          'Aprendizaje Continuo',
-          'Mantenibilidad',
-          'Desarrollo orientado a negocio',
+          'Despliegue en la nube',
+          'Integración de pagos con Mercado Pago',
         ]
       : [
-          'Problem solving',
+          'REST APIs with Spring Boot',
+          'JWT & role-based security',
+          'Relational database modeling',
           'Layered architecture',
-          'Teamwork',
-          'Continuous Learning',
-          'Maintainability',
-          'Business-oriented development',
+          'Cloud deployment',
+          'Mercado Pago payment integration',
         ],
   );
 
@@ -49,11 +49,11 @@ export class AboutComponent {
           },
           {
             year: '2025',
-            text: 'Proyecto final universitario e integración de sistemas de pago.',
+            text: 'Proyecto final: e-commerce Lautaro Diesel con Spring Boot, Angular e integración con Mercado Pago.',
           },
           {
             year: '2026',
-            text: 'Desarrollo de Club Banco, sistema de gestión deportiva con reglas de negocio reales, dashboards financieros y despliegue completo. Creación de portfolio profesional y búsqueda de primeras oportunidades laborales.',
+            text: 'Desarrollo y puesta en producción de Club Banco: sistema de gestión con reglas de negocio reales, dashboards financieros y despliegue completo.',
           },
         ]
       : [
@@ -71,11 +71,11 @@ export class AboutComponent {
           },
           {
             year: '2025',
-            text: 'Final university project and integration of payment systems.',
+            text: 'Final degree project: Lautaro Diesel e-commerce with Spring Boot, Angular and Mercado Pago integration.',
           },
           {
             year: '2026',
-            text: 'Development of Club Banco, a sports management system with real business rules, financial dashboards and full deployment. Creation of a professional portfolio and pursuit of first professional opportunities.',
+            text: 'Built and launched Club Banco to production: a management system with real business rules, financial dashboards and full deployment.',
           },
         ],
   );

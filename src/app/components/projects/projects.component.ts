@@ -9,8 +9,9 @@ type Project = {
   desc: string;
   metrics?: string[];
   stack: string[];
-  repoUrl: string;
+  repoUrl?: string;
   demoUrl?: string;
+  privateDemo?: boolean;
 };
 
 @Component({
@@ -27,20 +28,16 @@ export class ProjectsComponent {
     this.lang.lang() === 'es'
       ? {
           imgUrl: 'assets/cv/img/club-banco.png',
-          title: 'Club Banco - Sistema de Gestión Deportiva',
-          status: 'Proyecto Full Stack Principal',
-          desc: 'Sistema web desarrollado para la administración integral de un club deportivo. Permite gestionar socios, disciplinas, categorías, aranceles, pagos, deudas, ingresos, gastos y balances financieros desde un panel privado para administradores. Incluye autenticación JWT, dashboards interactivos, exportación de reportes Excel y despliegue completo de frontend, backend y base de datos.',
-          metrics: [
-            '+270 socios administrados',
-            '+7 disciplinas',
-            'Dashboard financiero completo',
-            'Exportación de reportes Excel',
-          ],
+          title: 'Club Banco — Sistema de gestión para club deportivo',
+          status: 'En producción',
+          desc: 'Aplicación web full stack que el Club Banco de Córdoba usa para administrar socios, disciplinas, categorías, aranceles, pagos, deudas, ingresos y gastos desde un panel privado para administradores. Backend: API REST con Java y Spring Boot en arquitectura en capas, con autenticación Spring Security + JWT y control de acceso por roles. Base de datos PostgreSQL en Supabase. Frontend en Angular con dashboards financieros en Chart.js y exportación de reportes a Excel. Despliegue: backend en Render y frontend en Netlify.',
+          metrics: ['En producción', '+500 socios', '7 disciplinas', 'Dashboard financiero', 'Reportes Excel'],
           stack: [
             'Java',
             'Spring Boot',
             'Spring Security',
             'JWT',
+            'APIs REST',
             'Angular',
             'PostgreSQL',
             'Supabase',
@@ -48,25 +45,20 @@ export class ProjectsComponent {
             'Netlify',
             'Chart.js',
           ],
-          repoUrl: 'https://github.com/TomasBreppe/Club-Banco',
-          demoUrl: 'https://club-banco.netlify.app',
+          privateDemo: true,
         }
       : {
           imgUrl: 'assets/cv/img/club-banco.png',
-          title: 'Club Banco - Sports Club Management System',
-          status: 'Main Full Stack Project',
-          desc: 'Web system developed for the comprehensive administration of a sports club. It allows managing members, disciplines, categories, fees, payments, debts, income, expenses, and financial balances from a private admin panel. It includes JWT authentication, interactive dashboards, Excel report exports, and full deployment of frontend, backend, and database.',
-          metrics: [
-            '+270 managed members',
-            '+7 disciplines',
-            'Complete financial dashboard',
-            'Excel report exports',
-          ],
+          title: 'Club Banco — Sports club management system',
+          status: 'In production',
+          desc: 'Full stack web application used by Club Banco (Córdoba) to manage members, disciplines, categories, fees, payments, debts, income and expenses from a private admin panel. Backend: REST API built with Java and Spring Boot using a layered architecture, with Spring Security + JWT authentication and role-based access control. PostgreSQL database hosted on Supabase. Angular frontend with Chart.js financial dashboards and Excel report export. Deployed with the backend on Render and the frontend on Netlify.',
+          metrics: ['In production', '500+ members', '7 disciplines', 'Financial dashboard', 'Excel reports'],
           stack: [
             'Java',
             'Spring Boot',
             'Spring Security',
             'JWT',
+            'REST APIs',
             'Angular',
             'PostgreSQL',
             'Supabase',
@@ -74,8 +66,7 @@ export class ProjectsComponent {
             'Netlify',
             'Chart.js',
           ],
-          repoUrl: 'https://github.com/TomasBreppe/Club-Banco',
-          demoUrl: 'https://club-banco.netlify.app',
+          privateDemo: true,
         },
   );
 
@@ -84,17 +75,17 @@ export class ProjectsComponent {
       ? [
           {
             imgUrl: 'assets/cv/img/lautaro-diesel.png',
-            title: 'LAUTARO DIESEL E-COMMERCE (Tesis)',
-            status: 'Finalizado',
-            desc: 'E-commerce full stack con arquitectura en capas, autenticación JWT, manejo de stock e integración con Mercado Pago.',
-            stack: ['Java', 'Spring Boot', 'Angular', 'SQL Server', 'JWT', 'Mercado Pago'],
+            title: 'Lautaro Diesel — E-commerce',
+            status: 'Proyecto final de carrera',
+            desc: 'E-commerce full stack desarrollado como proyecto final de la Tecnicatura. Backend en Java y Spring Boot con arquitectura en capas, autenticación JWT y gestión de stock; frontend en Angular y TypeScript; persistencia en SQL Server y pagos online con Mercado Pago Checkout Pro.',
+            stack: ['Java', 'Spring Boot', 'Spring Security', 'JWT', 'Angular', 'TypeScript', 'SQL Server', 'Mercado Pago'],
             repoUrl: 'https://github.com/TomasBreppe/LAUTARO-DIESEL-ECOMMERCE',
           },
           {
             imgUrl: 'assets/cv/img/hamburgueseria.png',
-            title: 'Hamburguesería (Proyecto personal)',
-            status: 'Finalizado',
-            desc: 'Web en Angular con interfaz responsive, estructura por componentes y foco en una experiencia visual moderna.',
+            title: 'Hamburguesería — Sitio web',
+            status: 'Proyecto personal',
+            desc: 'Sitio web responsive desarrollado con Angular y TypeScript, con arquitectura basada en componentes y foco en la experiencia de usuario.',
             stack: ['Angular', 'TypeScript', 'HTML', 'CSS'],
             repoUrl: 'https://github.com/TomasBreppe/Hamburgueseria',
           },
@@ -102,17 +93,17 @@ export class ProjectsComponent {
       : [
           {
             imgUrl: 'assets/cv/img/lautaro-diesel.png',
-            title: 'LAUTARO DIESEL E-COMMERCE (Thesis)',
-            status: 'Completed',
-            desc: 'Full stack e-commerce with layered architecture, JWT authentication, stock management, and Mercado Pago integration.',
-            stack: ['Java', 'Spring Boot', 'Angular', 'SQL Server', 'JWT', 'Mercado Pago'],
+            title: 'Lautaro Diesel — E-commerce',
+            status: 'Final degree project',
+            desc: 'Full stack e-commerce built as my final degree project. Java and Spring Boot backend with layered architecture, JWT authentication and stock management; Angular and TypeScript frontend; SQL Server persistence and online payments with Mercado Pago Checkout Pro.',
+            stack: ['Java', 'Spring Boot', 'Spring Security', 'JWT', 'Angular', 'TypeScript', 'SQL Server', 'Mercado Pago'],
             repoUrl: 'https://github.com/TomasBreppe/LAUTARO-DIESEL-ECOMMERCE',
           },
           {
             imgUrl: 'assets/cv/img/hamburgueseria.png',
-            title: 'Burger Shop (Personal project)',
-            status: 'Completed',
-            desc: 'Angular website with responsive UI, component-based structure, and a modern visual approach.',
+            title: 'Burger Shop — Website',
+            status: 'Personal project',
+            desc: 'Responsive website built with Angular and TypeScript, using a component-based architecture with a focus on user experience.',
             stack: ['Angular', 'TypeScript', 'HTML', 'CSS'],
             repoUrl: 'https://github.com/TomasBreppe/Hamburgueseria',
           },
